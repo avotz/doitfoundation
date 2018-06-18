@@ -78,7 +78,7 @@
                 }
             }
         }else{
-            window.location = '/' + href;
+            window.location = 'http://sandbox.avotz.com/doitfoundation/' + href;
         }
     });
  

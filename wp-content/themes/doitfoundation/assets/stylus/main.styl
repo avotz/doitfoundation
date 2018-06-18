@@ -1,0 +1,753 @@
+@import "nib"
+@import "normalize.styl"
+@import "icons.styl"
+@import "basic.styl"
+
+html,body
+	position: relative;
+	color #3b3b3b
+	//width: 100%;
+	//height: 100%;
+	//overflow: hidden;
+	//overflow-y: auto;
+
+body 
+	&.nav-is-open
+		.nav-container 
+			transform: translate3d(-100%, 0, 0);
+		.nav-menu 
+			li 
+				transform: translateX(0);
+				opacity 1
+		
+		.nav-btn-menu
+			.fa-bars
+				color rojo
+				&:before
+					content '\f00d'
+	&.home 
+		background-color #444
+		/*.header-logo
+			display none*/
+
+
+.nav
+	&-container 
+		z-index: 800;
+		position: fixed;
+		height: 100vh;
+		overflow-y: scroll;
+		top: 0;
+		left: 100%;
+		padding: 80px 40px;
+		width: 300px;
+		background-color: #F5F0EA;
+		transition all .5s cubic-bezier(.4,0,.2,1)
+		box-shadow 0px 1px 10px rgba(0,0,0,.55)
+		
+	&-social
+		a 
+			display inline-block
+			padding .5rem
+			font-size 1.5rem
+			color rojo
+			&:hover 
+				color naranja
+	&-menu
+		position relative 
+		background-color transparent
+		width 100%
+		left 0
+		color rojo
+		//text-align center
+		//padding-left 40px
+		padding-top 80px
+		padding-bottom 80px
+		li
+		&-item
+			display block
+			line-height 3rem
+			//transform: translateX(-100%)
+			transition: transform .45s cubic-bezier(.4,0,.2,1),opacity .3s cubic-bezier(.4,0,.2,1);
+			opacity 0
+			/*&:nth-child(1)
+				transition-delay .19s
+			&:nth-child(2)
+				transition-delay .23s
+			&:nth-child(3)
+				transition-delay .27s
+			&:nth-child(4)
+				transition-delay .31s
+			&:nth-child(5)
+				transition-delay .35s
+			&:nth-child(6)
+				transition-delay .39s*/
+			
+		a
+		&-link
+			display block
+			color rojo
+			//font-weight 700
+			font-size 1rem
+			text-transform uppercase
+			//border-bottom 1px solid #c3c3c3
+			&:hover
+				color naranja
+				margin-left 5px
+			
+	&-btn-menu
+		background-color transparent
+		top 15px
+		left 15px
+		z-index 902
+		border none
+		color rojo
+		font-size 2rem//2.8rem
+		outline none
+		transition all .3s ease
+		.fa-bars
+			&:before
+				transition all .3s ease
+
+body.home
+	.main 
+		padding 0
+	
+
+.header
+	position fixed
+	left 0
+	right 0
+	width 100%
+	background-color rojo
+	top 0
+	z-index 900
+	height 65px
+	transition all .5s ease
+	&-container 
+		padding 0 30px
+	&-menu
+		display inline-block
+		vertical-align: top
+		display none
+		padding-top: 1rem
+		&-ul 
+			display flex
+			flex-wrap wrap 
+			justify-content space-between
+		a 
+			display block
+			color White
+			text-transform uppercase
+			font-weight bold
+			padding 0 .5rem
+			font-size 14px
+			&:hover
+				color #F5F0EA
+	&-links
+		padding-right 1rem
+		// position: absolute;
+		// z-index: 1;
+		// width: 100%;
+		// left: 0;
+		// top: 23px;
+		// text-align: center;
+		// display: none;
+		a
+			display: inline-block;
+			color: #FFF;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 500;
+			//margin-right: 20px;
+	&-logo
+		//z-index: 300;
+		//position absolute
+		color white
+		font-weight 500
+		font-size 2rem
+		text-align center
+		transition all .3s ease
+		//padding 1rem 15px //2.65rem 0
+		display inline-block
+		width 100px;
+		//max-width 33.33%
+		//background-color #4a4a4a
+
+	&-right
+		position absolute
+		right 0px
+		top 0
+		z-index 3
+	&-btn-menu
+		//background #4a4a4a
+		font-size 14px
+		text-align center
+		padding .78rem 1.8rem
+		background-color #F5F0EA
+
+	&-contact
+		.btn
+			padding 1.4rem 1.5rem
+			margin-bottom 0
+			//background verde
+			&:hover
+				background #00642f
+			i 
+				//padding-right .5rem
+				font-size 1.5rem
+			span
+				opacity 0
+				display none
+				
+
+.btn-donate
+	background naranja
+	padding .3rem 1.5rem
+	margin-bottom 0
+	margin-top .8rem
+	font-weight bold
+	color white
+			
+		
+
+@media screen and (min-width: 768px)
+	.header
+		// &-logo
+		// 	padding 1rem 15px //2.65rem 0
+		// 	max-width 100px
+		// 	position absolute
+		// 	transform: translateX(0);
+		&-menu 
+			display inline-block
+		&-links 
+			display inline-block
+			
+				
+		
+	.nav
+		&-btn-menu
+			top 15px
+			left 60px
+		&-menu
+			padding-top: 5rem;
+			padding-bottom: 2.5rem;
+			//padding-left: 7.5rem;
+			li 
+				line-height 3.5rem
+			a
+				font-size 1rem
+	
+		
+@media screen and (min-width: 1000px)
+	.nav
+		&-aside
+			left auto
+			right 0
+			bottom 0
+			top 0
+			padding 0rem 4rem
+			.social
+				margin-top 6rem
+				li 
+					display block
+					
+					a 
+						color white
+						
+						font-size 1.5rem
+						padding 1.5rem 1rem
+			.copy
+				bottom 2rem 
+				left auto
+	
+
+
+.banner
+	height 40vh
+	width 100%
+
+	.slide
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 40vh;
+
+		.slide-title
+			position absolute
+			z-index 3
+			top 60%
+			left 50%
+			transform translate(-50%, -50%)
+			color white
+			text-align center
+			font-size 10px//1rem
+			text-transform uppercase
+			cursor pointer
+        
+	
+	#playerOverlay
+	#player
+		position absolute
+		width 100%
+		height 40vh
+		z-index 1
+	#playerOverlay
+		z-index 2
+		img
+			width 100%
+			height 100%
+		.overlay-title
+			position absolute
+			z-index 3
+			top 60%
+			left 50%
+			transform translate(-50%, -50%)
+			color white
+			text-align center
+			font-size 10px//1rem
+			text-transform uppercase
+			cursor pointer
+			
+			i 
+				font-size 2rem
+				margin-bottom 1.5rem
+				border 3px solid white
+				border-radius 50%
+				display inline-block
+				padding .8rem 1.1rem
+	
+@media screen and (min-width: 800px)
+	.banner
+		height 60vh
+		.slide
+			height: 60vh;
+			.slide-title
+				font-size 1rem
+				line-height 3rem
+		#playerOverlay
+		#player
+			height 60vh
+		#playerOverlay	
+			.overlay-title
+				font-size 1rem
+				line-height 3rem
+		
+				
+@media screen and (min-width: 1250px)
+	.banner
+		height 100vh
+		.slide
+			height: 100vh;
+			.slide-title
+				font-size 2rem
+		#playerOverlay
+		#player
+			height 100vh
+		#playerOverlay
+			img
+				height auto
+			.overlay-title
+				font-size 2rem
+
+				i 
+					font-size 3rem
+					border 5px solid white
+				
+.map
+	background-color #F5F0EA
+	padding-top 1rem
+	h2
+		text-align center
+		color rojo
+		text-transform uppercase
+	iframe
+		height 500px
+						
+	
+.main
+	padding 4rem 0 0 0
+
+.choose
+	&-item 
+		width 100%
+		a 
+			position relative
+			display: block;
+			z-index: 10;
+			width: 100%;
+			padding-bottom: 100%;
+			&:hover
+				.choose-item-container
+					&:after
+						content: '';
+						opacity: 1;
+		&-container
+			position: absolute;
+			display: block;
+			z-index: 10;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			&:after
+				top: 0;
+				left: 0;
+				z-index: 10;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				content: '';
+		.choose1
+			&:after
+				background-color: #F5F0EA;
+				opacity: .85;
+				transition: opacity .3s ease-in-out;
+			.choose-title
+				color rojo
+		.choose2
+			&:after
+				background-color: rojo;
+				opacity: .85;
+				transition: opacity .3s ease-in-out;
+				
+
+	&-title 
+		width: 100%;
+		padding: 0 5rem;
+		box-sizing: border-box;
+		position: absolute;
+		z-index: 50;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		display: block;
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+		color white
+		text-align center
+		text-transform uppercase
+		font-weight bold
+	&-bg
+		position: relative;
+		z-index: 5;
+		width: 100%;
+		height: 100%;
+		img
+			width 100%
+			display block
+@media screen and (min-width: 768px)
+	.choose
+		&-item 
+			width 50%
+		&-title 
+			font-size: 2.8rem;
+			line-height: 4.2rem;
+.news
+	padding 3rem 0
+	background-color #F5F0EA
+	&-container
+		max-width 1440px
+		padding-left 1rem
+		padding-right 1rem
+		margin 0 auto
+	&-title
+		text-align center
+		color rojo
+		text-transform uppercase
+	
+	&-item 
+		margin-bottom 1.5rem
+		width 100%
+		padding: 0 .5rem
+		&-link
+			
+			display: block;
+			border: none!important; 
+			&:hover
+				.news-item-img-hover
+					opacity 1
+		&-img 
+			position: relative;
+			display: block;
+			z-index: 10;
+			height: 9rem;
+			overflow: hidden;
+			&-hover
+				position: absolute;
+				z-index: 50;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba(255,251,220,.5);
+				opacity: 0;
+				transition: opacity .3s ease-in-out;
+				
+			img 
+				position: absolute;
+				display: block;
+				z-index: 10;
+				top: 50%;
+				left: 0;
+				transform: translate(0,-50%);
+				width: 101%;
+		&-content
+			position: relative;
+			display: block;
+			z-index: 10;
+			padding: 1rem 1.5rem;
+			background-color #1DD9E7
+		&-category
+			position: absolute;
+			display: block;
+			z-index: 10;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+			span
+				display: inline-block;
+				font-size 13px
+				padding: .2rem 1rem;
+				background-color rojo
+				text-transform uppercase
+				font-weight bold
+				color white
+				
+		&-title
+			color white
+			font-size 1.2rem
+		&-date 
+			color white
+			font-size 12px
+
+@media screen and (min-width: 768px)
+	.news
+		&-container
+			padding-left 4rem
+			padding-right 4rem
+		&-item 
+			width 48%
+						
+@media screen and (min-width: 1024px)
+	.news
+		&-container
+			padding-left 7rem
+			padding-right 7rem
+		&-item 
+			width 32%
+			&-title
+				font-size 1.1rem
+
+.page
+	.entry-header
+		padding 3rem 4.5rem 0
+		background-color rojo
+		text-align: center
+		h1
+			font-size: 2rem;
+			line-height: 2rem;
+			padding-bottom: 3rem
+			color white
+	.entry-content
+		padding-top: 2rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		padding-bottom: 2rem;
+		ul 
+			margin-left: 45px
+			margin-bottom: 1rem
+
+@media screen and (min-width: 768px)
+	.page
+		.entry-header
+			padding 3rem 4.5rem 0
+			text-align: center
+			h1
+				font-size: 3rem;
+				line-height: 8.2rem;
+				padding-bottom: 3rem
+				color white
+		.entry-content
+			padding-top: 4.5rem;
+			padding-left: 7rem;
+			padding-right: 7rem;
+			padding-bottom: 4.5rem;
+			h2
+				font-size: 3.4rem;
+				line-height: 5.6rem;
+			p
+				font-size: 1.5rem;
+				line-height: 2.6rem;
+				text-align: justify
+			
+
+@media screen and (min-width: 1300px)
+	.page
+		.entry-header
+			h1
+				font-size: 5rem;
+				line-height: 8.2rem;
+				
+		.entry-content
+			padding-top: 8.5rem;
+			padding-left: 19rem;
+			padding-right: 19rem;
+			padding-bottom: 8.5rem;
+			h2
+				font-size: 4.4rem;
+				
+			
+
+.partners
+	padding: 4rem 4rem
+	&-container
+		display flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&-item
+		width: 100%
+		margin-bottom: 1rem
+		font-size: .8rem
+		//max-height: 300px
+		h3
+			text-align: center
+		&-img
+			padding-bottom: 2rem
+			.partner-img
+				background-position: center center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				height 80px
+				width: auto
+
+@media screen and (min-width: 768px)
+	.partners
+		padding: 4rem 6rem
+		&-item
+			width: 30%
+
+
+
+.footer
+	background-color: #444
+	&-top
+		position relative
+		&-item 
+			width 100%
+			&-bg
+				position: absolute;
+				display: block;
+				z-index: 10;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				overflow: hidden;
+				img 
+					position: absolute;
+					display: block;
+					z-index: 10;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					min-width: 101%;
+					min-height: 101%;
+				&:after
+					top: 0;
+					left: 0;
+					z-index: 10;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					content: '';
+					background-color: rojo;
+					opacity: .85;
+					transition: opacity .3s ease-in-out;
+					
+			&-content 
+				position: absolute;
+				display: block;
+				z-index: 50;
+				top: 50%;
+				left: 0;
+				right: 0;
+				bottom: auto;
+				transform: translateY(-50%);
+				text-align center
+				&-item 
+					margin-bottom 1rem
+					font-size 1.5rem
+					text-transform uppercase
+					font-weight 900
+					a:not(.btn)
+						color white
+						&:hover
+							color naranja
+				
+
+			&.item-left
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				display: none
+				
+			&.item-right
+				padding: 5rem 0 4rem 8rem;
+				padding: 5rem 0 4rem 3rem;
+				box-sizing: border-box;
+				margin-left: 0
+				color white
+	&-nav
+		&-item
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+			max-width: 50%;
+			margin-bottom 1rem
+			&-title
+				font-weight 900
+				text-transform uppercase
+				margin-bottom .5rem
+				display block
+			
+			&:nth-child(odd) 
+				padding-right: 3.5rem;
+			ul
+				margin-left 10px
+			a
+				color #1DD9E7 
+				&:hover
+					color white
+	&-social
+		margin-top 1rem
+		a 
+			display inline-block
+			padding .5rem
+			font-size 1.5rem
+			color #1DD9E7 
+			&:hover
+				color white
+	&-bottom 
+		background-color rojo
+		text-align center
+		padding .5rem 0
+		color white 
+		a 
+			color white
+
+@media screen and (min-width: 768px)
+	.footer
+		&-top
+			position relative
+			&-item 
+				width 50%
+	
+				&.item-left
+					display: block
+					
+				&.item-right
+					margin-left: 50%;

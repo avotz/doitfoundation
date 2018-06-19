@@ -2,7 +2,7 @@
 @import "normalize.styl"
 @import "icons.styl"
 @import "basic.styl"
-
+@import "tables.styl"
 html,body
 	position: relative;
 	color #3b3b3b
@@ -130,17 +130,21 @@ body.home
 		display inline-block
 		vertical-align: top
 		display none
-		padding-top: 1rem
+		//padding-top: 1rem
 		&-ul 
 			display flex
 			flex-wrap wrap 
 			justify-content space-between
+		li.current-menu-item
+			a
+				background-color: white
+				color rojo
 		a 
 			display block
 			color White
 			text-transform uppercase
 			font-weight bold
-			padding 0 .5rem
+			padding 1.1rem 1rem
 			font-size 14px
 			&:hover
 				color #F5F0EA
@@ -211,7 +215,7 @@ body.home
 			
 		
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 950px)
 	.header
 		// &-logo
 		// 	padding 1rem 15px //2.65rem 0
@@ -377,7 +381,7 @@ body.home
 			display: block;
 			z-index: 10;
 			width: 100%;
-			padding-bottom: 100%;
+			padding-bottom: 62.9%;
 			&:hover
 				.choose-item-container
 					&:after
@@ -499,6 +503,7 @@ body.home
 			z-index: 10;
 			padding: 1rem 1.5rem;
 			background-color #1DD9E7
+			min-height: 137px
 		&-category
 			position: absolute;
 			display: block;
@@ -531,7 +536,7 @@ body.home
 		&-item 
 			width 48%
 						
-@media screen and (min-width: 1024px)
+@media screen and (min-width: 1200px)
 	.news
 		&-container
 			padding-left 7rem
@@ -559,6 +564,17 @@ body.home
 		ul 
 			margin-left: 45px
 			margin-bottom: 1rem
+
+.page-template-page-our-foundation
+	ul
+		list-style none
+		li > img
+			width: 54px;
+			height: 54px;
+			border-radius: 100%;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5px;
 
 @media screen and (min-width: 768px)
 	.page
@@ -702,20 +718,24 @@ body.home
 				margin-left: 0
 				color white
 	&-nav
+		display flex
+		flex-wrap: wrap
+		justify-content: space-around
 		&-item
-			display: inline-block;
+			//display: inline-block;
 			vertical-align: top;
 			text-align: left;
 			max-width: 50%;
 			margin-bottom 1rem
+			padding-right: 1.5rem;
 			&-title
 				font-weight 900
 				text-transform uppercase
 				margin-bottom .5rem
 				display block
 			
-			&:nth-child(odd) 
-				padding-right: 3.5rem;
+			// &:nth-child(odd) 
+			// 	padding-right: 3.5rem;
 			ul
 				margin-left 10px
 			a
@@ -751,3 +771,4 @@ body.home
 					
 				&.item-right
 					margin-left: 50%;
+					width: 50%

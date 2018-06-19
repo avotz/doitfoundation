@@ -34,15 +34,15 @@
               <div class="footer-nav-item">
                 <a href="#" class="footer-nav-item-title">About Us</a>
                 <?php
-					wp_nav_menu(array(
-						'theme_location' => 'footer-menu',
-						'menu_id' => 'footer-menu',
-						'container' => 'nav',
-						'container_class' => 'footer-menu',
-						'container_id' => '',
-						'menu_class' => 'footer-menu-ul',
-					));
-					?>
+                wp_nav_menu(array(
+                  'theme_location' => 'footer-menu',
+                  'menu_id' => 'footer-menu',
+                  'container' => 'nav',
+                  'container_class' => 'footer-menu',
+                  'container_id' => '',
+                  'menu_class' => 'footer-menu-ul',
+                ));
+                ?>
               </div>
               <div class="footer-nav-item">
                   <a href="#" class="footer-nav-item-title">News & Events</a>
@@ -62,6 +62,32 @@
                   </ul>
                   </nav>
               </div>
+              <div class="footer-nav-item">
+                  <a href="#" class="footer-nav-item-title">Contact Us</a>
+                  <nav class="footer-menu">
+                    <ul class="footer-menu-ul">
+                      <li class="footer-menu-item">
+                            <a href="mailto::ileanar@grupodoit.com" class="footer-menu-link">ileanar@grupodoit.com</a>
+
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="tel:+506 2667 0912" class="footer-menu-link">+506 2667 0912</a>
+                            
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="mailto::dcortez@grupodoit.com" class="footer-menu-link anchor">dcortez@grupodoit.com</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="tel:+506 2667 0906" class="footer-menu-link">+506 2667 0906</a>
+                            
+                        </li>
+                        
+                      
+                       
+                      
+                  </ul>
+                  </nav>
+              </div>
             </div>
             <div class="footer-social">
               <a href="https://www.facebook.com/DoItFoundation/" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -74,7 +100,7 @@
       </div>
       <div class="footer-bottom">
         
-        Do it Foundation &copy; 2018. <a href="mailto::ileanar@grupodoit.com">ileanar@grupodoit.com </a> - <a href="tel:+506 2667 0912">+506 2667 0912</a>
+        Do it Foundation &copy; 2018.
       </div>
    </footer>
 <?php wp_footer(); ?>

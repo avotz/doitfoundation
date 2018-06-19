@@ -63,7 +63,7 @@ get_header();
                         BECOME A VOLUNTEER
                       </div>
                       <div class="choose-bg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/choose1.png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/choose1.jpg">
                       </div>
                   </div>
                   
@@ -76,7 +76,7 @@ get_header();
                         MAKE A DONATION
                       </div>
                       <div class="choose-bg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/choose2.png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/choose2.jpg">
                       </div>
                   </div>
                </a>
@@ -84,12 +84,12 @@ get_header();
          </div>
       </section>
 
-      <section class="map">
+      <!-- <section class="map">
         <h2 class="map-title">Title</h2>
         <div class="map-container">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15684.919025455205!2d-85.4281962!3d10.639251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x756af3ebd14361a2!2sAvotz+Web+Works!5e0!3m2!1ses-419!2s!4v1442615525574" width="600" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         </div>
-      </section>
+      </section> -->
       <section class="news">
          <h2 class="news-title">News & Events</h2>
         <div class="news-container flex-container-st">

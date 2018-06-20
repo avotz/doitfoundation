@@ -111,7 +111,7 @@ body
 
 body.home
 	.main 
-		padding 0
+		padding 8rem 0 0 0
 	
 
 .header
@@ -122,8 +122,13 @@ body.home
 	background-color rojo
 	top 0
 	z-index 900
-	height 65px
+	height 130px
 	transition all .5s ease
+	box-shadow: -1px -1px 10px rgba(0,0,0,.5);
+	&-top
+		background-color: white
+		text-align: center
+		height 65px
 	&-container 
 		padding 0 30px
 	&-menu
@@ -165,6 +170,7 @@ body.home
 			font-weight: 500;
 			//margin-right: 20px;
 	&-logo
+		
 		//z-index: 300;
 		//position absolute
 		color white
@@ -173,7 +179,7 @@ body.home
 		text-align center
 		transition all .3s ease
 		//padding 1rem 15px //2.65rem 0
-		display inline-block
+		display none
 		width 100px;
 		//max-width 33.33%
 		//background-color #4a4a4a
@@ -181,7 +187,7 @@ body.home
 	&-right
 		position absolute
 		right 0px
-		top 0
+		top 65px
 		z-index 3
 	&-btn-menu
 		//background #4a4a4a
@@ -224,6 +230,7 @@ body.home
 		// 	transform: translateX(0);
 		&-menu 
 			display inline-block
+			width: 75%
 		&-links 
 			display inline-block
 			
@@ -548,7 +555,7 @@ body.home
 
 .page
 	.entry-header
-		padding 3rem 4.5rem 0
+		padding 6rem 4.5rem 0
 		background-color rojo
 		text-align: center
 		h1
@@ -579,7 +586,7 @@ body.home
 @media screen and (min-width: 768px)
 	.page
 		.entry-header
-			padding 3rem 4.5rem 0
+			padding 6rem 4.5rem 0
 			text-align: center
 			h1
 				font-size: 3rem;
@@ -712,8 +719,8 @@ body.home
 				display: none
 				
 			&.item-right
-				padding: 5rem 0 4rem 8rem;
-				padding: 5rem 0 4rem 3rem;
+				//padding: 5rem 0 4rem 8rem;
+				padding: 2rem 0 2rem 3rem;
 				box-sizing: border-box;
 				margin-left: 0
 				color white

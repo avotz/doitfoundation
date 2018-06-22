@@ -19,15 +19,15 @@ get_header();
 
       <div class="banner">
            
-							 <div class="banner-logo">
-							 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Do it Foundation">
-							 </div>
+							
               <div class="banner-slider">
                
                     <div class="slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner.jpg')">
 						 <div id="overlay-link" class="slide-title">
 						  
-		
+							 <div class="banner-logo">
+							 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Do it Foundation">
+							 </div>
 							<h2>We believe a wheelchair is a human right</h2>
 
 						</div>
@@ -35,14 +35,18 @@ get_header();
 					</div>
                     <div class="slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner2.jpg')">
 						<div id="overlay-link" class="slide-title">
-		
+							 <div class="banner-logo">
+							 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Do it Foundation">
+							 </div>
 							<h2>A Wheelchair is a gift that extends dignity, freedom and independence</h2>
 
 						</div>
 					</div>
                     <div class="slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner3.jpg')">
 						<div id="overlay-link" class="slide-title">
-		
+							 <div class="banner-logo">
+							 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Do it Foundation">
+							 </div>
 							<h2>More hope through mobility.</h2>
 
 						</div>

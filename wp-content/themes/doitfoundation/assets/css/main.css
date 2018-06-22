@@ -1717,16 +1717,8 @@ body.home .main {
   position: relative;
 }
 .banner-logo {
-  position: absolute;
-  z-index: 3;
-  top: 13%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  -moz-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
   max-width: 100px;
+  display: inline-block;
 }
 .banner-logo img {
   border-radius: 100%;
@@ -1743,7 +1735,7 @@ body.home .main {
 .banner .slide .slide-title {
   position: absolute;
   z-index: 3;
-  top: 60%;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);

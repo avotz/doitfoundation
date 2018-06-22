@@ -132,6 +132,7 @@ body.home
 	&-container 
 		padding 0 30px
 	&-menu
+		//width: 70%
 		display inline-block
 		vertical-align: top
 		display none
@@ -149,7 +150,7 @@ body.home
 			color White
 			text-transform uppercase
 			font-weight bold
-			padding 1.1rem 1rem
+			padding 1.1rem 1.5rem
 			font-size 14px
 			&:hover
 				color #F5F0EA
@@ -230,7 +231,7 @@ body.home
 		// 	transform: translateX(0);
 		&-menu 
 			display inline-block
-			width: 75%
+			//width: 60%
 		&-links 
 			display inline-block
 			
@@ -277,7 +278,16 @@ body.home
 .banner
 	height 40vh
 	width 100%
-
+	position relative
+	&-logo
+		position: absolute;
+		z-index: 3;
+		top: 13%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		max-width: 100px
+		img
+			border-radius: 100%
 	.slide
 		background-position: center center;
 		background-size: cover;
@@ -332,6 +342,8 @@ body.home
 @media screen and (min-width: 800px)
 	.banner
 		height 60vh
+		&-logo
+			max-width 170px
 		.slide
 			height: 60vh;
 			.slide-title
@@ -349,6 +361,9 @@ body.home
 @media screen and (min-width: 1250px)
 	.banner
 		height 100vh
+		&-logo
+			top: 20%
+			max-width 250px
 		.slide
 			height: 100vh;
 			.slide-title
@@ -388,7 +403,7 @@ body.home
 			display: block;
 			z-index: 10;
 			width: 100%;
-			padding-bottom: 62.9%;
+			padding-bottom: 31.5%//62.9%;
 			&:hover
 				.choose-item-container
 					&:after
@@ -720,7 +735,8 @@ body.home
 				
 			&.item-right
 				//padding: 5rem 0 4rem 8rem;
-				padding: 2rem 0 2rem 3rem;
+				//padding: 2rem 0 2rem 3rem;
+				padding: 1rem 0 0rem 3rem;
 				box-sizing: border-box;
 				margin-left: 0
 				color white
@@ -750,7 +766,7 @@ body.home
 				&:hover
 					color white
 	&-social
-		margin-top 1rem
+		//margin-top 1rem
 		a 
 			display inline-block
 			padding .5rem

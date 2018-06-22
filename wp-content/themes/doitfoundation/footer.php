@@ -43,6 +43,12 @@
                   'menu_class' => 'footer-menu-ul',
                 ));
                 ?>
+                <div class="footer-social">
+                  <a href="https://www.facebook.com/DoItFoundation/" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
               </div>
               <div class="footer-nav-item">
                   <a href="#" class="footer-nav-item-title">News & Events</a>
@@ -89,12 +95,12 @@
                   </nav>
               </div>
             </div>
-            <div class="footer-social">
+            <!-- <div class="footer-social">
               <a href="https://www.facebook.com/DoItFoundation/" target="_blank"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
               <a href="#"><i class="fa fa-google-plus"></i></a>
               <a href="#"><i class="fa fa-youtube"></i></a>
-            </div>
+            </div> -->
           </div>
         
       </div>

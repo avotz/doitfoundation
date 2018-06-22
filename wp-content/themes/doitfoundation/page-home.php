@@ -19,11 +19,14 @@ get_header();
 
       <div class="banner">
            
-          
+							 <div class="banner-logo">
+							 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Do it Foundation">
+							 </div>
               <div class="banner-slider">
                
                     <div class="slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner.jpg')">
 						 <div id="overlay-link" class="slide-title">
+						  
 		
 							<h2>We believe a wheelchair is a human right</h2>
 

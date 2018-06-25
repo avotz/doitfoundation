@@ -111,7 +111,7 @@ body
 
 body.home
 	.main 
-		padding 8rem 0 0 0
+		padding 6rem 0 0 0
 	
 
 .header
@@ -122,7 +122,7 @@ body.home
 	background-color rojo
 	top 0
 	z-index 900
-	height 130px
+	height 110px//130px
 	transition all .5s ease
 	box-shadow: -1px -1px 10px rgba(0,0,0,.5);
 	&-top
@@ -130,13 +130,13 @@ body.home
 		text-align: center
 		height 65px
 	&-container 
-		padding 0 30px
+		padding 0 30px 0 0
 	&-menu
 		//width: 70%
 		display inline-block
 		vertical-align: top
 		display none
-		//padding-top: 1rem
+		padding-top: 1.5rem
 		&-ul 
 			display flex
 			flex-wrap wrap 
@@ -181,14 +181,17 @@ body.home
 		transition all .3s ease
 		//padding 1rem 15px //2.65rem 0
 		display none
-		width 100px;
+		width 354px;
 		//max-width 33.33%
 		//background-color #4a4a4a
+		&-mobile
+			width: 113px
+			display block
 
 	&-right
 		position absolute
 		right 0px
-		top 65px
+		top 24px
 		z-index 3
 	&-btn-menu
 		//background #4a4a4a
@@ -222,18 +225,21 @@ body.home
 			
 		
 
-@media screen and (min-width: 950px)
+@media screen and (min-width: 640px)
 	.header
-		// &-logo
-		// 	padding 1rem 15px //2.65rem 0
-		// 	max-width 100px
-		// 	position absolute
-		// 	transform: translateX(0);
-		&-menu 
+		&-logo
 			display inline-block
-			//width: 60%
-		&-links 
-			display inline-block
+			&-mobile
+				display none
+			// padding 1rem 15px //2.65rem 0
+			// max-width 100px
+			// position absolute
+			// transform: translateX(0);
+		// &-menu 
+		// 	display inline-block
+		// 	//width: 60%
+		// &-links 
+		// 	display inline-block
 			
 				
 		
@@ -273,7 +279,12 @@ body.home
 				bottom 2rem 
 				left auto
 	
-
+@media screen and (min-width: 1240px)
+	.header
+		&-menu 
+			display inline-block
+		&-links 
+			display inline-block
 
 .banner
 	height 40vh

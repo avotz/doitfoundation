@@ -22,13 +22,14 @@
 
 <body <?php body_class(); ?>>
 <header class="header">
-          <div class="header-top">
+          <!-- <div class="header-top">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="header-top-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-horizontal.jpg" alt="Do it Foundation"></a>
-          </div>
+          </div> -->
           
           <div class="header-container ">
               
-              <a href="<?php echo esc_url(home_url('/')); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Do it Foundation"></a>
+              <a href="<?php echo esc_url(home_url('/')); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-horizontal2.jpg" alt="Do it Foundation"></a>
+              <a href="<?php echo esc_url(home_url('/')); ?>" class="header-logo-mobile"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Do it Foundation"></a>
              
                 <?php
                 wp_nav_menu(array(

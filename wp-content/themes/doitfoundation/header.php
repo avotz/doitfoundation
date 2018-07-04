@@ -44,8 +44,13 @@
 
                
               <div class="header-right flex-container-sb">
+                <div class="header-lang">
+                    <a href="<?php echo esc_url(home_url('/en')); ?>">EN</a> | 
+                    <a href="<?php echo esc_url(home_url('/es')); ?>">ES</a>
+                </div>
                 <div class="header-links">
-                  <a href="<?php echo esc_url(home_url('/donate')); ?>" class="btn btn-donate">Donate</a>
+                    
+                    <a href="<?php echo esc_url(home_url('/donate')); ?>" class="btn btn-donate"><?php pll_e('Donate'); ?></a>
                 </div>
                 <div class="header-btn-menu">
                    <button id="btn-menu" class="nav-btn-menu">

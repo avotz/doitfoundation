@@ -165,6 +165,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/cpt.php';
 
 /**
+ * Translate Strings.
+ */
+require get_template_directory() . '/inc/translate-strings.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -8,7 +9,7 @@
  * different template.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
+ * Template Name: Page Home 
  * @package doitfoundation
  */
 
@@ -28,7 +29,7 @@ get_header();
 							 <!-- <div class="banner-logo">
 							 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Do it Foundation">
 							 </div> -->
-							<h2>We believe a wheelchair is a human right</h2>
+							<h2><?php pll_e('We believe a wheelchair is a human right'); ?></h2>
 
 						</div>
 
@@ -38,7 +39,7 @@ get_header();
 							 <!-- <div class="banner-logo">
 							 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Do it Foundation">
 							 </div> -->
-							<h2>A Wheelchair is a gift that extends dignity, freedom and independence</h2>
+							<h2><?php pll_e('A Wheelchair is a gift that extends dignity, freedom and independence'); ?></h2>
 
 						</div>
 					</div>
@@ -47,7 +48,7 @@ get_header();
 							 <!-- <div class="banner-logo">
 							 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Do it Foundation">
 							 </div> -->
-							<h2>More hope through mobility.</h2>
+							<h2><?php pll_e('More hope through mobility'); ?></h2>
 
 						</div>
 					</div>
@@ -67,7 +68,7 @@ get_header();
                <a href="<?php echo esc_url(home_url('/volunteer')); ?>">
                   <div class="choose-item-container choose1">
                       <div class="choose-title">
-                        BECOME A VOLUNTEER
+                        <?php pll_e('Become A Volunteer'); ?>
                       </div>
                       <div class="choose-bg">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/choose1.jpg">
@@ -80,7 +81,7 @@ get_header();
                <a href="<?php echo esc_url(home_url('/donate')); ?>">
                    <div class="choose-item-container choose2">
                       <div class="choose-title">
-                        MAKE A DONATION
+                        <?php pll_e('Make A Donation'); ?>
                       </div>
                       <div class="choose-bg">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/choose2.jpg">
@@ -91,14 +92,25 @@ get_header();
          </div>
       </section>
 
-      <!-- <section class="map">
-        <h2 class="map-title">Title</h2>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15684.919025455205!2d-85.4281962!3d10.639251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x756af3ebd14361a2!2sAvotz+Web+Works!5e0!3m2!1ses-419!2s!4v1442615525574" width="600" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-        </div>
-      </section> -->
-      <section class="news">
-         <h2 class="news-title">News & Events</h2>
+      <section class="map">
+			  <?php rewind_posts(); ?>
+				<?php query_posts('post_type=page&page_id=126'); ?>
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+								<?php /*the_title('<h2 class="map-title">', '</h2>'); */?>
+								 <div class="map-container">
+									<?php the_content(); ?>
+								</div>
+										
+								
+
+						<?php endwhile; ?>
+						<!-- post navigation -->
+						
+				<?php endif; ?>
+        
+      </section>
+      <section class="news" id="news-events">
+         <h2 class="news-title"><?php pll_e('News & Events'); ?></h2>
         <div class="news-container flex-container-st">
 		   <?php
 				$args = array(

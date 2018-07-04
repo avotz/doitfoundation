@@ -19,20 +19,20 @@
             </div>
             <div class="footer-top-item-content">
               <div class="footer-top-item-content-item">
-                <a href="<?php echo esc_url(home_url('/volunteer')); ?>">BECOME A VOLUNTEER</a>
+                <a href="<?php echo esc_url(home_url('/volunteer')); ?>"><?php pll_e('Become A Volunteer'); ?></a>
               </div>
                <div class="footer-top-item-content-item">
-                <a href="<?php echo esc_url(home_url('/donate')); ?>">Make a Donation</a>
+                <a href="<?php echo esc_url(home_url('/donate')); ?>"><?php pll_e('Make A Donation'); ?></a>
               </div>
                <div class="footer-top-item-content-item">
-                <a href="<?php echo esc_url(home_url('/contact-us')); ?>" class="btn btn-donate">Contact Us</a>
+                <a href="<?php echo esc_url(home_url('/contact-us')); ?>" class="btn btn-donate"><?php pll_e('Contact Us'); ?></a>
               </div>
             </div>
           </div>
           <div class="footer-top-item item-right">
             <div class="footer-nav">
               <div class="footer-nav-item">
-                <a href="#" class="footer-nav-item-title">About Us</a>
+                <a href="#" class="footer-nav-item-title"><?php pll_e('About Us'); ?></a>
                 <?php
                 wp_nav_menu(array(
                   'theme_location' => 'footer-menu',
@@ -51,17 +51,17 @@
                 </div>
               </div>
               <div class="footer-nav-item">
-                  <a href="#" class="footer-nav-item-title">News & Events</a>
+                  <a href="#" class="footer-nav-item-title"><?php pll_e('News & Events'); ?></a>
                   <nav class="footer-menu">
                     <ul class="footer-menu-ul">
                       <li class="footer-menu-item">
-                            <a href="#" class="footer-menu-link">News & articles</a>
+                            <a href="#news-events" class="footer-menu-link"><?php pll_e('News & articles'); ?></a>
                         </li>
                         <li class="footer-menu-item">
-                            <a href="#" class="footer-menu-link anchor">Stories</a>
+                            <a href="#news-events" class="footer-menu-link anchor"><?php pll_e('Stories'); ?></a>
                         </li>
                         <li class="footer-menu-item">
-                            <a href="#" class="footer-menu-link anchor">Events</a>
+                            <a href="#news-events" class="footer-menu-link anchor"><?php pll_e('Events'); ?></a>
                         </li>
                        
                       
@@ -69,7 +69,7 @@
                   </nav>
               </div>
               <div class="footer-nav-item">
-                  <a href="#" class="footer-nav-item-title">Contact Us</a>
+                  <a href="#" class="footer-nav-item-title"><?php pll_e('Contact Us'); ?></a>
                   <nav class="footer-menu">
                     <ul class="footer-menu-ul">
                       <li class="footer-menu-item">

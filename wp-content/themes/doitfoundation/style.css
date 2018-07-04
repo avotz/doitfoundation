@@ -1605,14 +1605,23 @@ body.home .main {
   color: White;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 1.1rem 1rem;
+  padding: 1.1rem 1.5rem;
   font-size: 14px;
 }
 .header-menu a:hover {
   color: #f5f0ea;
 }
+.header-lang {
+  padding-right: 1rem;
+  color: #fff;
+  padding-top: 18px;
+}
+.header-lang a {
+  color: #fff;
+}
 .header-links {
   padding-right: 1rem;
+  display: none;
 }
 .header-links a {
   display: inline-block;
@@ -1673,6 +1682,11 @@ body.home .main {
   margin-top: 0.8rem;
   font-weight: bold;
   color: #fff;
+}
+@media screen and (min-width: 440px) {
+  .header-links {
+    display: block;
+  }
 }
 @media screen and (min-width: 640px) {
   .header-logo {
@@ -1862,12 +1876,15 @@ body.home .main {
 }
 .map {
   background-color: #f5f0ea;
-  padding-top: 1rem;
+  padding-top: 2.5rem;
+  text-align: center;
 }
 .map h2 {
   text-align: center;
   color: #da3a3f;
   text-transform: uppercase;
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
 }
 .map iframe {
   height: 500px;
@@ -2122,9 +2139,6 @@ body.home .main {
   margin-left: 45px;
   margin-bottom: 1rem;
 }
-.page-template-page-our-foundation ul {
-  list-style: none;
-}
 .page-template-page-our-foundation ul li > img {
   width: 54px;
   height: 54px;
@@ -2173,6 +2187,12 @@ body.home .main {
   }
   .page .entry-content h2 {
     font-size: 4.4rem;
+  }
+  .page-template-page-gallery .entry-content {
+    padding-top: 4.5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 4.5rem;
   }
 }
 .partners {

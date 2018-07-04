@@ -157,12 +157,19 @@ body.home
 			color White
 			text-transform uppercase
 			font-weight bold
-			padding 1.1rem 1rem
+			padding 1.1rem 1.5rem
 			font-size 14px
 			&:hover
 				color #F5F0EA
+	&-lang
+		padding-right: 1rem;
+		color: white
+		padding-top: 18px;
+		a
+			color:white
 	&-links
 		padding-right 1rem
+		display none
 		// position: absolute;
 		// z-index: 1;
 		// width: 100%;
@@ -229,8 +236,11 @@ body.home
 	margin-top .8rem
 	font-weight bold
 	color white
+	
 			
-		
+@media screen and (min-width: 440px)
+	.header-links
+		display block		
 
 @media screen and (min-width: 640px)
 	.header
@@ -409,11 +419,14 @@ body.home
 				
 .map
 	background-color #F5F0EA
-	padding-top 1rem
+	padding-top 2.5rem
+	text-align: center
 	h2
 		text-align center
 		color rojo
 		text-transform uppercase
+		font-size: 4.5rem
+		margin-bottom: 1.5rem
 	iframe
 		height 500px
 						
@@ -615,7 +628,7 @@ body.home
 
 .page-template-page-our-foundation
 	ul
-		list-style none
+		//list-style none
 		li > img
 			width: 54px;
 			height: 54px;
@@ -662,8 +675,12 @@ body.home
 			padding-bottom: 8.5rem;
 			h2
 				font-size: 4.4rem;
-				
-			
+	.page-template-page-gallery
+		.entry-content		
+			padding-top: 4.5rem;
+			padding-left: 7rem;
+			padding-right: 7rem;
+			padding-bottom: 4.5rem;
 
 .partners
 	padding: 4rem 4rem

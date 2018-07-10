@@ -2222,9 +2222,13 @@ body.home .main {
   width: 100%;
   margin-bottom: 1rem;
   font-size: 0.8rem;
+  text-align: center;
 }
 .partners-item h3 {
   text-align: center;
+}
+.partners-item ul {
+  list-style: none;
 }
 .partners-item-img {
   padding-bottom: 2rem;

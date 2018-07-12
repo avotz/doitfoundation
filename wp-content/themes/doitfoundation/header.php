@@ -49,8 +49,11 @@
                     <a href="<?php echo esc_url(home_url('/es')); ?>">ES</a>
                 </div>
                 <div class="header-links">
-                    
-                    <a href="<?php echo esc_url(home_url('/donate')); ?>" class="btn btn-donate"><?php pll_e('Donate'); ?></a>
+                   <?php if(get_locale() == 'es_ES') : ?>
+                        <a href="<?php echo esc_url(home_url('/donar')); ?>" class="btn btn-donate"><?php pll_e('Donate'); ?></a>
+                    <?php else: ?>
+                        <a href="<?php echo esc_url(home_url('/donate')); ?>" class="btn btn-donate"><?php pll_e('Donate'); ?></a>
+                    <?php endif; ?>
                 </div>
                 <div class="header-btn-menu">
                    <button id="btn-menu" class="nav-btn-menu">

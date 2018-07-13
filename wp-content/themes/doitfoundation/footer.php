@@ -32,7 +32,7 @@
           <div class="footer-top-item item-right">
             <div class="footer-nav">
               <div class="footer-nav-item">
-                <a href="#" class="footer-nav-item-title"><?php pll_e('About Us'); ?></a>
+                <span class="footer-nav-item-title"><?php pll_e('About Us'); ?></span>
                 <?php
                 wp_nav_menu(array(
                   'theme_location' => 'footer-menu',
@@ -51,11 +51,24 @@
                 </div>
               </div>
               <div class="footer-nav-item">
-                  <a href="#" class="footer-nav-item-title"><?php pll_e('News & Events'); ?></a>
-                  <nav class="footer-menu">
+                  <span class="footer-nav-item-title"><?php pll_e('News & Events'); ?></span>
+                  <?php  wp_nav_menu(array(
+                    'theme_location' => 'news-menu',
+                    'menu_id' => 'news-menu',
+                    'container' => 'nav',
+                    'container_class' => 'footer-menu',
+                    'container_id' => '',
+                    'menu_class' => 'footer-menu-ul',
+                  ));
+                  ?>
+                  <!-- <nav class="footer-menu">
                     <ul class="footer-menu-ul">
                       <li class="footer-menu-item">
-                            <a href="#news-events" class="footer-menu-link"><?php pll_e('News & articles'); ?></a>
+                          <?php if (get_locale() == 'es_ES') : ?>
+                            <a href="<?php echo esc_url(home_url('/noticias')); ?>" class="footer-menu-link"><?php pll_e('News & articles'); ?></a>
+                          <?php else : ?>
+                            <a href="<?php echo esc_url(home_url('/news')); ?>" class="footer-menu-link"><?php pll_e('News & articles'); ?></a>
+                          <?php endif; ?>
                         </li>
                         <li class="footer-menu-item">
                             <a href="#news-events" class="footer-menu-link anchor"><?php pll_e('Stories'); ?></a>
@@ -66,10 +79,10 @@
                        
                       
                   </ul>
-                  </nav>
+                  </nav> -->
               </div>
               <div class="footer-nav-item">
-                  <a href="#" class="footer-nav-item-title"><?php pll_e('Contact Us'); ?></a>
+                  <span class="footer-nav-item-title"><?php pll_e('Contact Us'); ?></span>
                   <nav class="footer-menu">
                     <ul class="footer-menu-ul">
                       <li class="footer-menu-item">

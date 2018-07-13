@@ -50,6 +50,7 @@ if ( ! function_exists( 'doitfoundation_setup' ) ) :
 			'header-menu' => esc_html__( 'Header', 'doitfoundation' ),
 			'nav-menu' => esc_html__('Nav', 'doitfoundation'),
 			'footer-menu' => esc_html__('Footer', 'doitfoundation'),
+			'news-menu' => esc_html__('News', 'doitfoundation'),
 		) );
 
 		/*

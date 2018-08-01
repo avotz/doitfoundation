@@ -196,7 +196,7 @@ get_header();
 						?>
 
 								<div class="news-item">
-									<a href="<?php the_permalink() ?>" class="news-item-link" target="_blank">
+									<a href="<?php the_permalink() ?>" class="news-item-link">
 									<div class="news-item-img">
 										<?php if (has_post_thumbnail()) :
 

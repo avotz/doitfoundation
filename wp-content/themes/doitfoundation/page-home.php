@@ -174,6 +174,69 @@ get_header();
 
 
         ?>
+
+		<?php
+	$args = array(
+		'post_type' => 'post',
+		'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
+		'posts_per_page' => 9,
+
+
+	);
+
+
+	$items = new WP_Query($args);
+
+	if ($items->have_posts()) {
+		?>
+						
+						<?php while ($items->have_posts()) {
+						$items->the_post();
+
+						?>
+
+								<div class="news-item">
+									<a href="<?php the_permalink() ?>" class="news-item-link" target="_blank">
+									<div class="news-item-img">
+										<?php if (has_post_thumbnail()) :
+
+										$id = get_post_thumbnail_id($post->ID);
+									$thumb_url = wp_get_attachment_image_src($id, 'news-thumbs', true);
+
+									?>
+											
+											<img src="<?php echo esc_url($thumb_url[0]) ?>" />
+											
+												
+											
+										<?php endif; ?>
+									
+										<div class="news-item-img-hover"></div>
+									</div>
+									<div class="news-item-content">
+										<div class="news-item-category">
+										<span>News</span>
+										</div>
+										<!-- <time class="news-item-date">14-5-2018</time> -->
+										<h2 class="news-item-title"> <?php the_title() ?></h2>
+									</div>
+									</a>
+								</div>
+							
+						
+								
+											
+											<?php
+
+									} ?>
+							
+
+
+							<?php 
+					}
+
+
+					?>
           
         </div>
       </section>

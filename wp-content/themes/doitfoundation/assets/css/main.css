@@ -2465,6 +2465,8 @@ body.home .main {
 .blog-info .entry-header,
 .blog-sidebar .entry-header {
   position: relative;
+  background-color: transparent;
+  padding: 0;
 }
 .blog-info .entry-meta,
 .blog-sidebar .entry-meta {

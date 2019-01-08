@@ -112,35 +112,37 @@ get_header();
       <section class="news" id="news-events">
          <h2 class="news-title"><?php pll_e('News & Events'); ?></h2>
         <div class="news-container flex-container-st">
-		   <?php
-				$args = array(
-					'post_type' => 'news-link',
-					'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
-					'posts_per_page' => 9,
-					
+		   
 
-				);
+		<?php
+	$args = array(
+		'post_type' => 'post',
+		'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
+		'posts_per_page' => 9,
 
 
-				$items = new WP_Query($args);
+	);
 
-				if ($items->have_posts()) {
-					?>
+
+	$items = new WP_Query($args);
+
+	if ($items->have_posts()) {
+		?>
 						
 						<?php while ($items->have_posts()) {
-								$items->the_post();
+						$items->the_post();
 
-								?>
+						?>
 
 								<div class="news-item">
-									<a href="<?php echo rwmb_meta('rw_news_url') ?>" class="news-item-link" target="_blank">
+									<a href="<?php the_permalink() ?>" class="news-item-link">
 									<div class="news-item-img">
 										<?php if (has_post_thumbnail()) :
 
 										$id = get_post_thumbnail_id($post->ID);
-										$thumb_url = wp_get_attachment_image_src($id, 'news-thumbs', true);
+									$thumb_url = wp_get_attachment_image_src($id, 'news-thumbs', true);
 
-										?>
+									?>
 											
 											<img src="<?php echo esc_url($thumb_url[0]) ?>" />
 											
@@ -165,30 +167,29 @@ get_header();
 											
 											<?php
 
-										} ?>
+									} ?>
 							
 
 
 							<?php 
-							}
+					}
 
 
-        ?>
-
-		<?php
-	$args = array(
-		'post_type' => 'post',
-		'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
-		'posts_per_page' => 9,
-
-
-	);
+					?>
+			<?php
+		$args = array(
+			'post_type' => 'news-link',
+			'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
+			'posts_per_page' => 9,
 
 
-	$items = new WP_Query($args);
+		);
 
-	if ($items->have_posts()) {
-		?>
+
+		$items = new WP_Query($args);
+
+		if ($items->have_posts()) {
+			?>
 						
 						<?php while ($items->have_posts()) {
 						$items->the_post();
@@ -196,7 +197,7 @@ get_header();
 						?>
 
 								<div class="news-item">
-									<a href="<?php the_permalink() ?>" class="news-item-link">
+									<a href="<?php echo rwmb_meta('rw_news_url') ?>" class="news-item-link" target="_blank">
 									<div class="news-item-img">
 										<?php if (has_post_thumbnail()) :
 

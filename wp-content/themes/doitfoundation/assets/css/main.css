@@ -1550,7 +1550,7 @@ body.home .main {
   left: 0;
   right: 0;
   width: 100%;
-  background-color: #da3a3f;
+  background-color: #fff;
   top: 0;
   z-index: 900;
   height: 110px;
@@ -1602,22 +1602,22 @@ body.home .main {
 }
 .header-menu a {
   display: block;
-  color: White;
+  color: #da3a3f;
   text-transform: uppercase;
   font-weight: bold;
   padding: 1.1rem 1.5rem;
   font-size: 14px;
 }
 .header-menu a:hover {
-  color: #f5f0ea;
+  color: #444;
 }
 .header-lang {
   padding-right: 1rem;
-  color: #fff;
+  color: #da3a3f;
   padding-top: 18px;
 }
 .header-lang a {
-  color: #fff;
+  color: #da3a3f;
 }
 .header-links {
   padding-right: 1rem;

@@ -1,7 +1,6 @@
 {
   "name": "doitfundation",
   "version": "0.0.1",
-
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "gulp-uglify": "^3.0.0",
@@ -12,5 +11,4 @@
     "gulp-stylus": "^2.7.0",
     "nib": "^1.1.2"
   }
-
 }
